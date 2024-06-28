@@ -5,7 +5,7 @@
 int main(int argc, char *argv[]){
     QApplication a(argc, argv);
 
-    ProcessedImage image("sunset2.png");
+    ProcessedImage image("sunset.png");
     performConversion(image);
     // performConversionWithFile(image);
     // performConversionWithFiles(image);

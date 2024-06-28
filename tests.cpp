@@ -173,6 +173,7 @@ void performConversion(ProcessedImage& image){
     vector<vector<string>> encoded = image.encode();
     QImage* decoded = image.decode(encoded);
     image.displayOther(decoded);
+    image.saveConverted(decoded);
     delete decoded;
 }
 

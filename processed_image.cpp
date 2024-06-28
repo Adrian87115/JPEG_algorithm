@@ -63,6 +63,14 @@ void ProcessedImage::displayOther(QImage* other_img){
     temp_label->show();
 }
 
+void ProcessedImage::saveConverted(QImage* img_name){
+    if(!img_name){
+        cerr << "Error: Can't save empty image" << endl;
+        return;
+    }
+    img_name->save("output.jpg");
+}
+
 vector<QImage> ProcessedImage::separateChannels(QImage img_to_separate){
     if(img_to_separate.isNull()){
         img_to_separate = *img;

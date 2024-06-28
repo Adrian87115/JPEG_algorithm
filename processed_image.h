@@ -22,6 +22,7 @@ public:
     void loadImage(string img_name);
     void displayImage();
     void displayOther(QImage* other_img);
+    void saveConverted(QImage* img_name);
 
     // encoding
 
