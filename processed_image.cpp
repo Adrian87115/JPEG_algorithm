@@ -68,7 +68,7 @@ void ProcessedImage::saveConverted(QImage* img_name){
         cerr << "Error: Can't save empty image" << endl;
         return;
     }
-    img_name->save("output.jpg");
+    img_name->save("output.png");
 }
 
 vector<QImage> ProcessedImage::separateChannels(QImage img_to_separate){
