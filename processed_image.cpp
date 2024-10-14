@@ -503,11 +503,6 @@ vector<vector<string>> ProcessedImage::HuffmanEncoding(vector<vector<int>> rle_d
         HuffmanNode* root = buildHuffmanTree(values, frequencies);
         tree_channels[ch] = root;
         map<int, string> huffmanCodes = getHuffmanCodes(values, frequencies);
-
-        // for(const auto& pair : huffmanCodes){
-        //     cout << "Value: " << pair.first << " Code: " << pair.second << endl;
-        // }
-
         for(int val : rle_data[ch]){
             encoded_channels[ch].push_back(huffmanCodes[val]);
         }
@@ -607,7 +602,6 @@ void ProcessedImage::generateHuffmanCodeMap(HuffmanNode* root, string code, map<
     }
     if(isLeaf(root)){
         huffman_codes[code] = root->value;
-
     }
     generateHuffmanCodeMap(root->left, code + "0", huffman_codes);
     generateHuffmanCodeMap(root->right, code + "1", huffman_codes);
