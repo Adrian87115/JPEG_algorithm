@@ -12,7 +12,5 @@ discrete cosine transform: https://eng.libretexts.org/Bookshelves/Electrical_Eng
 https://www.geeksforgeeks.org/discrete-cosine-transform-algorithm-program/
                            
 Huffman coding: https://www.youtube.com/watch?v=iEm1NRyEe5c&ab_channel=PizzeyTechnology
-
                 https://www.dcode.fr/huffman-tree-compression
-                
                 https://www.geeksforgeeks.org/huffman-coding-greedy-algo-3/
